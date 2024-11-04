@@ -328,6 +328,270 @@ int main() {
 ```
 
 
+---
+
+### 16. Swap Two Numbers
+```cpp
+#include <iostream>
+int main() {
+    int a, b, temp;
+    std::cout << "Enter two numbers: ";
+    std::cin >> a >> b;
+    temp = a;
+    a = b;
+    b = temp;
+    std::cout << "After swapping, a = " << a << ", b = " << b << std::endl;
+    return 0;
+}
+```
+
+### 17. Simple Interest Calculation
+```cpp
+#include <iostream>
+int main() {
+    float principal, rate, time, interest;
+    std::cout << "Enter principal, rate, and time: ";
+    std::cin >> principal >> rate >> time;
+    interest = (principal * rate * time) / 100;
+    std::cout << "Simple Interest = " << interest << std::endl;
+    return 0;
+}
+```
+
+### 18. Area of a Circle
+```cpp
+#include <iostream>
+#define PI 3.14159
+int main() {
+    float radius, area;
+    std::cout << "Enter radius: ";
+    std::cin >> radius;
+    area = PI * radius * radius;
+    std::cout << "Area of Circle = " << area << std::endl;
+    return 0;
+}
+```
+
+### 19. Leap Year Check
+```cpp
+#include <iostream>
+int main() {
+    int year;
+    std::cout << "Enter a year: ";
+    std::cin >> year;
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+        std::cout << year << " is a leap year.";
+    else
+        std::cout << year << " is not a leap year.";
+    return 0;
+}
+```
+
+### 20. Sum of Natural Numbers
+```cpp
+#include <iostream>
+int main() {
+    int n, sum = 0;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> n;
+    for (int i = 1; i <= n; ++i) sum += i;
+    std::cout << "Sum = " << sum << std::endl;
+    return 0;
+}
+```
+
+### 21. LCM of Two Numbers
+```cpp
+#include <iostream>
+int main() {
+    int a, b, lcm;
+    std::cout << "Enter two numbers: ";
+    std::cin >> a >> b;
+    lcm = (a > b) ? a : b;
+    while (true) {
+        if (lcm % a == 0 && lcm % b == 0) {
+            std::cout << "LCM = " << lcm << std::endl;
+            break;
+        }
+        ++lcm;
+    }
+    return 0;
+}
+```
+
+### 22. GCD of Two Numbers
+```cpp
+#include <iostream>
+int main() {
+    int a, b;
+    std::cout << "Enter two numbers: ";
+    std::cin >> a >> b;
+    while (a != b) {
+        if (a > b) a -= b;
+        else b -= a;
+    }
+    std::cout << "GCD = " << a << std::endl;
+    return 0;
+}
+```
+
+### 23. Binary to Decimal
+```cpp
+#include <iostream>
+#include <cmath>
+int main() {
+    int binary, decimal = 0, base = 1, remainder;
+    std::cout << "Enter a binary number: ";
+    std::cin >> binary;
+    while (binary > 0) {
+        remainder = binary % 10;
+        decimal += remainder * base;
+        binary /= 10;
+        base *= 2;
+    }
+    std::cout << "Decimal = " << decimal << std::endl;
+    return 0;
+}
+```
+
+### 24. Decimal to Binary
+```cpp
+#include <iostream>
+int main() {
+    int decimal, binary = 0, base = 1, remainder;
+    std::cout << "Enter a decimal number: ";
+    std::cin >> decimal;
+    while (decimal > 0) {
+        remainder = decimal % 2;
+        binary += remainder * base;
+        decimal /= 2;
+        base *= 10;
+    }
+    std::cout << "Binary = " << binary << std::endl;
+    return 0;
+}
+```
+
+### 25. Print ASCII Value
+```cpp
+#include <iostream>
+int main() {
+    char c;
+    std::cout << "Enter a character: ";
+    std::cin >> c;
+    std::cout << "ASCII value of " << c << " = " << int(c) << std::endl;
+    return 0;
+}
+```
+
+### 26. Average of Numbers
+```cpp
+#include <iostream>
+int main() {
+    int n, sum = 0, number;
+    std::cout << "Enter the number of elements: ";
+    std::cin >> n;
+    for (int i = 0; i < n; ++i) {
+        std::cout << "Enter number " << i + 1 << ": ";
+        std::cin >> number;
+        sum += number;
+    }
+    std::cout << "Average = " << sum / static_cast<float>(n) << std::endl;
+    return 0;
+}
+```
+
+### 27. Find Maximum Element in Array
+```cpp
+#include <iostream>
+int main() {
+    int n;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) std::cin >> arr[i];
+    int max = arr[0];
+    for (int i = 1; i < n; ++i) if (arr[i] > max) max = arr[i];
+    std::cout << "Maximum element = " << max << std::endl;
+    return 0;
+}
+```
+
+### 28. Find Minimum Element in Array
+```cpp
+#include <iostream>
+int main() {
+    int n;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) std::cin >> arr[i];
+    int min = arr[0];
+    for (int i = 1; i < n; ++i) if (arr[i] < min) min = arr[i];
+    std::cout << "Minimum element = " << min << std::endl;
+    return 0;
+}
+```
+
+### 29. Sum of Array Elements
+```cpp
+#include <iostream>
+int main() {
+    int n, sum = 0;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> arr[i];
+        sum += arr[i];
+    }
+    std::cout << "Sum of elements = " << sum << std::endl;
+    return 0;
+}
+```
+
+### 30. Reverse an Array
+```cpp
+#include <iostream>
+int main() {
+    int n;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) std::cin >> arr[i];
+    std::cout << "Reversed array: ";
+    for (int i = n - 1; i >= 0; --i) std::cout << arr[i] << " ";
+    return 0;
+}
+```
+
+### 31. Count Vowels and Consonants
+```cpp
+#include <iostream>
+#include <cctype>
+int main() {
+    std::string text;
+    int vowels = 0, consonants = 0;
+    std::cout << "Enter a string: ";
+    std::getline(std::cin, text);
+    for (char ch : text) {
+        if (std::isalpha(ch)) {
+            ch = std::tolower(ch);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                ++vowels;
+            else
+                ++consonants;
+        }
+    }
+    std::cout << "Vowels: " << vowels << ", Consonants: " << consonants << std::endl;
+    return 0;
+}
+```
+
 
 
 ## Usage
