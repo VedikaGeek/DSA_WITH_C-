@@ -31,63 +31,66 @@ Sure! Here's the clickable index for the README, formatted for easy navigation:
 ---
 
 
-
-## Index
-
-1. [Hello World Program](#1-hello-world-program)
-2. [Sum of Two Numbers](#2-sum-of-two-numbers)
-3. [Difference of Two Numbers](#3-difference-of-two-numbers)
-4. [Multiplication of Two Numbers](#multiplication-of-two-numbers)
-5. [Division of Two Numbers](#division-of-two-numbers)
-6. [Check Even or Odd](#check-even-or-odd)
-7. [Find Largest of Three Numbers](#find-largest-of-three-numbers)
-8. [Check Prime Number](#check-prime-number)
-9. [Check Armstrong Number](#check-armstrong-number)
-10. [Reverse a Number](#reverse-a-number)
-11. [Sum of Digits of a Number](#sum-of-digits-of-a-number)
-12. [Count Digits in a Number](#count-digits-in-a-number)
-13. [Fibonacci Series](#fibonacci-series)
-14. [Factorial of a Number](#factorial-of-a-number)
-15. [Temperature Conversion (Celsius to Fahrenheit)](#temperature-conversion-celsius-to-fahrenheit)
-16. [Swap Two Numbers](#swap-two-numbers)
-17. [Simple Interest Calculation](#simple-interest-calculation)
-18. [Area of a Circle](#area-of-a-circle)
-19. [Leap Year Check](#leap-year-check)
-20. [Sum of Natural Numbers](#sum-of-natural-numbers)
-21. [LCM of Two Numbers](#lcm-of-two-numbers)
-22. [GCD of Two Numbers](#gcd-of-two-numbers)
-23. [Binary to Decimal Conversion](#binary-to-decimal-conversion)
-24. [Decimal to Binary Conversion](#decimal-to-binary-conversion)
-25. [Print ASCII Value](#print-ascii-value)
-26. [Average of Numbers](#average-of-numbers)
-27. [Find Maximum Element in Array](#find-maximum-element-in-array)
-28. [Find Minimum Element in Array](#find-minimum-element-in-array)
-29. [Sum of Array Elements](#sum-of-array-elements)
-30. [Reverse an Array](#reverse-an-array)
-31. [Count Vowels and Consonants](#count-vowels-and-consonants)
-32. [Check if a String is a Palindrome](#check-if-a-string-is-a-palindrome)
-33. [Find Factorial Using Recursion](#find-factorial-using-recursion)
-34. [Find Fibonacci Series Using Recursion](#find-fibonacci-series-using-recursion)
-35. [Convert Celsius to Fahrenheit](#convert-celsius-to-fahrenheit)
-36. [Find Largest and Smallest Number in Array](#find-largest-and-smallest-number-in-array)
-37. [Transpose of a Matrix](#transpose-of-a-matrix)
-38. [Sum of Each Row and Column in a Matrix](#sum-of-each-row-and-column-in-a-matrix)
-39. [Count Frequency of Elements in an Array](#count-frequency-of-elements-in-an-array)
-40. [Sort Array in Ascending Order](#sort-array-in-ascending-order)
-41. [Find Median of Array](#find-median-of-array)
-42. [Find Mode of Array](#find-mode-of-array)
-43. [Reverse a String](#reverse-a-string)
-44. [Find Length of a String](#find-length-of-a-string)
-45. [Convert String to Uppercase](#convert-string-to-uppercase)
-46. [Convert String to Lowercase](#convert-string-to-lowercase)
-47. [Remove Vowels from a String](#remove-vowels-from-a-string)
-48. [Count Words in a Sentence](#count-words-in-a-sentence)
-49. [Find Sum of Digits in an Integer](#find-sum-of-digits-in-an-integer)
-50. [Reverse a Number](#reverse-a-number)
+Here's a README-style index for all 50 C++ programming questions along with their corresponding solutions. 
 
 ---
 
-Feel free to let me know if you need anything else!
+
+
+## Index
+
+1. **Hello World Program**
+2. **Sum of Two Numbers**
+3. **Difference of Two Numbers**
+4. **Multiplication of Two Numbers**
+5. **Division of Two Numbers**
+6. **Check Even or Odd**
+7. **Find Largest of Three Numbers**
+8. **Check Prime Number**
+9. **Check Armstrong Number**
+10. **Reverse a Number**
+11. **Sum of Digits of a Number**
+12. **Count Digits in a Number**
+13. **Fibonacci Series**
+14. **Factorial of a Number**
+15. **Temperature Conversion (Celsius to Fahrenheit)**
+16. **Swap Two Numbers**
+17. **Simple Interest Calculation**
+18. **Area of a Circle**
+19. **Leap Year Check**
+20. **Sum of Natural Numbers**
+21. **LCM of Two Numbers**
+22. **GCD of Two Numbers**
+23. **Binary to Decimal Conversion**
+24. **Decimal to Binary Conversion**
+25. **Print ASCII Value**
+26. **Average of Numbers**
+27. **Find Maximum Element in Array**
+28. **Find Minimum Element in Array**
+29. **Sum of Array Elements**
+30. **Reverse an Array**
+31. **Count Vowels and Consonants**
+32. **Check if a String is a Palindrome**
+33. **Find Factorial Using Recursion**
+34. **Find Fibonacci Series Using Recursion**
+35. **Convert Celsius to Fahrenheit**
+36. **Find Largest and Smallest Number in Array**
+37. **Transpose of a Matrix**
+38. **Sum of Each Row and Column in a Matrix**
+39. **Count Frequency of Elements in an Array**
+40. **Sort Array in Ascending Order**
+41. **Find Median of Array**
+42. **Find Mode of Array**
+43. **Reverse a String**
+44. **Find Length of a String**
+45. **Convert String to Uppercase**
+46. **Convert String to Lowercase**
+47. **Remove Vowels from a String**
+48. **Count Words in a Sentence**
+49. **Find Sum of Digits in an Integer**
+50. **Reverse a Number**
+
+
 ## Solutions
 
 ### 1. Hello World Program
