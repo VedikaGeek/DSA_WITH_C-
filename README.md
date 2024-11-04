@@ -144,11 +144,191 @@ int main() {
     std::cout << "Largest: " << largest << std::endl;
     return 0;
 }
+
+
+### 6. Simple Calculator
+```cpp
+#include <iostream>
+int main() {
+    char op;
+    double num1, num2;
+    std::cout << "Enter operator (+, -, *, /): ";
+    std::cin >> op;
+    std::cout << "Enter two numbers: ";
+    std::cin >> num1 >> num2;
+    switch(op) {
+        case '+': std::cout << num1 + num2; break;
+        case '-': std::cout << num1 - num2; break;
+        case '*': std::cout << num1 * num2; break;
+        case '/': std::cout << num1 / num2; break;
+        default: std::cout << "Invalid operator!";
+    }
+    std::cout << std::endl;
+    return 0;
+}
 ```
 
-*(Continue in this format for questions 6-50, similar to the structure above)*
+### 7. Prime Number Check
+```cpp
+#include <iostream>
+int main() {
+    int n, i;
+    bool isPrime = true;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> n;
+    if (n <= 1) isPrime = false;
+    for (i = 2; i <= n / 2; ++i) {
+        if (n % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    std::cout << (isPrime ? "Prime" : "Not Prime") << std::endl;
+    return 0;
+}
+```
 
----
+### 8. Factorial of a Number
+```cpp
+#include <iostream>
+int main() {
+    int n;
+    long long factorial = 1;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> n;
+    for (int i = 1; i <= n; ++i) factorial *= i;
+    std::cout << "Factorial of " << n << " = " << factorial << std::endl;
+    return 0;
+}
+```
+
+### 9. Fibonacci Series
+```cpp
+#include <iostream>
+int main() {
+    int n, t1 = 0, t2 = 1, nextTerm;
+    std::cout << "Enter the number of terms: ";
+    std::cin >> n;
+    std::cout << "Fibonacci Series: ";
+    for (int i = 1; i <= n; ++i) {
+        std::cout << t1 << " ";
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+    return 0;
+}
+```
+
+### 10. Reverse a Number
+```cpp
+#include <iostream>
+int main() {
+    int n, reverse = 0, remainder;
+    std::cout << "Enter an integer: ";
+    std::cin >> n;
+    while (n != 0) {
+        remainder = n % 10;
+        reverse = reverse * 10 + remainder;
+        n /= 10;
+    }
+    std::cout << "Reversed Number = " << reverse << std::endl;
+    return 0;
+}
+```
+
+### 11. Sum of Digits
+```cpp
+#include <iostream>
+int main() {
+    int n, sum = 0;
+    std::cout << "Enter an integer: ";
+    std::cin >> n;
+    while (n != 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    std::cout << "Sum of digits = " << sum << std::endl;
+    return 0;
+}
+```
+
+### 12. Palindrome Check
+```cpp
+#include <iostream>
+int main() {
+    int n, original, reverse = 0, remainder;
+    std::cout << "Enter an integer: ";
+    std::cin >> n;
+    original = n;
+    while (n != 0) {
+        remainder = n % 10;
+        reverse = reverse * 10 + remainder;
+        n /= 10;
+    }
+    if (original == reverse) std::cout << "Palindrome";
+    else std::cout << "Not Palindrome";
+    return 0;
+}
+```
+
+### 13. Armstrong Number
+```cpp
+#include <iostream>
+#include <cmath>
+int main() {
+    int n, original, remainder, result = 0, digits = 0;
+    std::cout << "Enter an integer: ";
+    std::cin >> n;
+    original = n;
+    while (original != 0) {
+        original /= 10;
+        ++digits;
+    }
+    original = n;
+    while (original != 0) {
+        remainder = original % 10;
+        result += std::pow(remainder, digits);
+        original /= 10;
+    }
+    if (result == n) std::cout << "Armstrong Number";
+    else std::cout << "Not an Armstrong Number";
+    return 0;
+}
+```
+
+### 14. Number of Digits
+```cpp
+#include <iostream>
+int main() {
+    int n, count = 0;
+    std::cout << "Enter an integer: ";
+    std::cin >> n;
+    while (n != 0) {
+        n /= 10;
+        ++count;
+    }
+    std::cout << "Number of digits = " << count << std::endl;
+    return 0;
+}
+```
+
+### 15. Power of a Number
+```cpp
+#include <iostream>
+#include <cmath>
+int main() {
+    double base, exponent, result;
+    std::cout << "Enter base and exponent: ";
+    std::cin >> base >> exponent;
+    result = std::pow(base, exponent);
+    std::cout << base << "^" << exponent << " = " << result << std::endl;
+    return 0;
+}
+```
+
+
+
 
 ## Usage
 
