@@ -34,7 +34,7 @@ Sure! Here's the clickable index for the README, formatted for easy navigation:
 
 ## Index
 
-1. [Hello World Program](###hello-world-program)
+1. [Hello World Program](#1-hello-world-program)
 2. [Sum of Two Numbers](#sum-of-two-numbers)
 3. [Difference of Two Numbers](#difference-of-two-numbers)
 4. [Multiplication of Two Numbers](#multiplication-of-two-numbers)
