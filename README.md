@@ -833,6 +833,117 @@ int main() {
 ```
 
 
+
+---
+
+### 44. Find Length of a String
+```cpp
+#include <iostream>
+int main() {
+    std::string str;
+    std::cout << "Enter a string: ";
+    std::cin >> str;
+    std::cout << "Length of the string = " << str.length() << std::endl;
+    return 0;
+}
+```
+
+### 45. Convert String to Uppercase
+```cpp
+#include <iostream>
+#include <algorithm>
+int main() {
+    std::string str;
+    std::cout << "Enter a string: ";
+    std::cin >> str;
+    std::transform(str.begin(), str.end(), str.begin(), ::toupper);
+    std::cout << "Uppercase string: " << str << std::endl;
+    return 0;
+}
+```
+
+### 46. Convert String to Lowercase
+```cpp
+#include <iostream>
+#include <algorithm>
+int main() {
+    std::string str;
+    std::cout << "Enter a string: ";
+    std::cin >> str;
+    std::transform(str.begin(), str.end(), str.begin(), ::tolower);
+    std::cout << "Lowercase string: " << str << std::endl;
+    return 0;
+}
+```
+
+### 47. Remove Vowels from a String
+```cpp
+#include <iostream>
+int main() {
+    std::string str, result;
+    std::cout << "Enter a string: ";
+    std::cin >> str;
+    for (char ch : str) {
+        if (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u' &&
+            ch != 'A' && ch != 'E' && ch != 'I' && ch != 'O' && ch != 'U') {
+            result += ch;
+        }
+    }
+    std::cout << "String without vowels: " << result << std::endl;
+    return 0;
+}
+```
+
+### 48. Count Words in a Sentence
+```cpp
+#include <iostream>
+#include <sstream>
+int main() {
+    std::string sentence;
+    std::cout << "Enter a sentence: ";
+    std::getline(std::cin, sentence);
+    std::istringstream iss(sentence);
+    int word_count = 0;
+    std::string word;
+    while (iss >> word) ++word_count;
+    std::cout << "Word count = " << word_count << std::endl;
+    return 0;
+}
+```
+
+### 49. Find Sum of Digits in an Integer
+```cpp
+#include <iostream>
+int main() {
+    int num, sum = 0;
+    std::cout << "Enter an integer: ";
+    std::cin >> num;
+    while (num != 0) {
+        sum += num % 10;
+        num /= 10;
+    }
+    std::cout << "Sum of digits = " << sum << std::endl;
+    return 0;
+}
+```
+
+### 50. Reverse a Number
+```cpp
+#include <iostream>
+int main() {
+    int num, reversed = 0;
+    std::cout << "Enter a number: ";
+    std::cin >> num;
+    while (num != 0) {
+        reversed = reversed * 10 + num % 10;
+        num /= 10;
+    }
+    std::cout << "Reversed number = " << reversed << std::endl;
+    return 0;
+}
+```
+
+
 ## Usage
 
 To run any of the solutions, compile the `.cpp` file using a C++ compiler, and execute the output file. Example for compiling **Hello World**:
