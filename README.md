@@ -26,63 +26,68 @@ This repository is designed to help beginners learn C++ programming by solving b
 
 Clone the repository and open each file in your code editor to view questions and solutions.
 
-## Index of Questions
-
-| No. | Question Title                           | Solution             |
-| --- | ---------------------------------------- | --------------------- |
-| 1   | [Hello World Program](#1-hello-world-program) | Below                |
-| 2   | [Input and Output](#2-input-and-output)       | Below                |
-| 3   | [Sum of Two Numbers](#3-sum-of-two-numbers)   | Below                |
-| 4   | [Odd or Even](#4-odd-or-even)                 | Below                |
-| 5   | [Largest of Three Numbers](#5-largest-of-three-numbers) | Below |
-| 6   | [Simple Calculator](#6-simple-calculator)     | Below                |
-| 7   | [Prime Number Check](#7-prime-number-check)   | Below                |
-| 8   | [Factorial of a Number](#8-factorial-of-a-number) | Below          |
-| 9   | [Fibonacci Series](#9-fibonacci-series)       | Below                |
-| 10  | [Reverse a Number](#10-reverse-a-number)      | Below                |
-| 11  | [Sum of Digits](#11-sum-of-digits)            | Below                |
-| 12  | [Palindrome Check](#12-palindrome-check)      | Below                |
-| 13  | [Armstrong Number](#13-armstrong-number)      | Below                |
-| 14  | [Number of Digits](#14-number-of-digits)      | Below                |
-| 15  | [Power of a Number](#15-power-of-a-number)    | Below                |
-| 16  | [Swap Two Numbers](#16-swap-two-numbers)      | Below                |
-| 17  | [Simple Interest Calculation](#17-simple-interest-calculation) | Below |
-| 18  | [Area of a Circle](#18-area-of-a-circle)      | Below                |
-| 19  | [Leap Year Check](#19-leap-year-check)        | Below                |
-| 20  | [Sum of Natural Numbers](#20-sum-of-natural-numbers) | Below         |
-| 21  | [LCM of Two Numbers](#21-lcm-of-two-numbers)  | Below                |
-| 22  | [GCD of Two Numbers](#22-gcd-of-two-numbers)  | Below                |
-| 23  | [Binary to Decimal](#23-binary-to-decimal)    | Below                |
-| 24  | [Decimal to Binary](#24-decimal-to-binary)    | Below                |
-| 25  | [Print ASCII Value](#25-print-ascii-value)    | Below                |
-| 26  | [Average of Numbers](#26-average-of-numbers)  | Below                |
-| 27  | [Find Maximum Element in Array](#27-find-maximum-element-in-array) | Below |
-| 28  | [Find Minimum Element in Array](#28-find-minimum-element-in-array) | Below |
-| 29  | [Sum of Array Elements](#29-sum-of-array-elements) | Below          |
-| 30  | [Reverse an Array](#30-reverse-an-array)      | Below                |
-| 31  | [Count Vowels and Consonants](#31-count-vowels-and-consonants) | Below |
-| 32  | [Prime Numbers in a Range](#32-prime-numbers-in-a-range) | Below   |
-| 33  | [Remove Duplicates from Array](#33-remove-duplicates-from-array) | Below |
-| 34  | [Count Frequency of Elements](#34-count-frequency-of-elements) | Below |
-| 35  | [Sort Array in Ascending Order](#35-sort-array-in-ascending-order) | Below |
-| 36  | [Transpose of a Matrix](#36-transpose-of-a-matrix) | Below         |
-| 37  | [Multiplication Table](#37-multiplication-table) | Below         |
-| 38  | [Calculate Sum of Series (1 + 1/2 + 1/3 ...)](#38-calculate-sum-of-series) | Below |
-| 39  | [Check Alphabet Character](#39-check-alphabet-character) | Below    |
-| 40  | [Count Words in a String](#40-count-words-in-a-string) | Below      |
-| 41  | [Check if Array is Sorted](#41-check-if-array-is-sorted) | Below      |
-| 42  | [Bubble Sort](#42-bubble-sort)               | Below                |
-| 43  | [Insertion Sort](#43-insertion-sort)         | Below                |
-| 44  | [Selection Sort](#44-selection-sort)         | Below                |
-| 45  | [Quick Sort](#45-quick-sort)                 | Below                |
-| 46  | [Binary Search](#46-binary-search)           | Below                |
-| 47  | [Linear Search](#47-linear-search)           | Below                |
-| 48  | [Convert Celsius to Fahrenheit](#48-convert-celsius-to-fahrenheit) | Below |
-| 49  | [Calculate Compound Interest](#49-calculate-compound-interest) | Below |
-| 50  | [Array Reversal](#50-array-reversal)         | Below                |
+Sure! Here's the clickable index for the README, formatted for easy navigation:
 
 ---
 
+
+
+## Index
+
+1. [Hello World Program](#hello-world-program)
+2. [Sum of Two Numbers](#sum-of-two-numbers)
+3. [Difference of Two Numbers](#difference-of-two-numbers)
+4. [Multiplication of Two Numbers](#multiplication-of-two-numbers)
+5. [Division of Two Numbers](#division-of-two-numbers)
+6. [Check Even or Odd](#check-even-or-odd)
+7. [Find Largest of Three Numbers](#find-largest-of-three-numbers)
+8. [Check Prime Number](#check-prime-number)
+9. [Check Armstrong Number](#check-armstrong-number)
+10. [Reverse a Number](#reverse-a-number)
+11. [Sum of Digits of a Number](#sum-of-digits-of-a-number)
+12. [Count Digits in a Number](#count-digits-in-a-number)
+13. [Fibonacci Series](#fibonacci-series)
+14. [Factorial of a Number](#factorial-of-a-number)
+15. [Temperature Conversion (Celsius to Fahrenheit)](#temperature-conversion-celsius-to-fahrenheit)
+16. [Swap Two Numbers](#swap-two-numbers)
+17. [Simple Interest Calculation](#simple-interest-calculation)
+18. [Area of a Circle](#area-of-a-circle)
+19. [Leap Year Check](#leap-year-check)
+20. [Sum of Natural Numbers](#sum-of-natural-numbers)
+21. [LCM of Two Numbers](#lcm-of-two-numbers)
+22. [GCD of Two Numbers](#gcd-of-two-numbers)
+23. [Binary to Decimal Conversion](#binary-to-decimal-conversion)
+24. [Decimal to Binary Conversion](#decimal-to-binary-conversion)
+25. [Print ASCII Value](#print-ascii-value)
+26. [Average of Numbers](#average-of-numbers)
+27. [Find Maximum Element in Array](#find-maximum-element-in-array)
+28. [Find Minimum Element in Array](#find-minimum-element-in-array)
+29. [Sum of Array Elements](#sum-of-array-elements)
+30. [Reverse an Array](#reverse-an-array)
+31. [Count Vowels and Consonants](#count-vowels-and-consonants)
+32. [Check if a String is a Palindrome](#check-if-a-string-is-a-palindrome)
+33. [Find Factorial Using Recursion](#find-factorial-using-recursion)
+34. [Find Fibonacci Series Using Recursion](#find-fibonacci-series-using-recursion)
+35. [Convert Celsius to Fahrenheit](#convert-celsius-to-fahrenheit)
+36. [Find Largest and Smallest Number in Array](#find-largest-and-smallest-number-in-array)
+37. [Transpose of a Matrix](#transpose-of-a-matrix)
+38. [Sum of Each Row and Column in a Matrix](#sum-of-each-row-and-column-in-a-matrix)
+39. [Count Frequency of Elements in an Array](#count-frequency-of-elements-in-an-array)
+40. [Sort Array in Ascending Order](#sort-array-in-ascending-order)
+41. [Find Median of Array](#find-median-of-array)
+42. [Find Mode of Array](#find-mode-of-array)
+43. [Reverse a String](#reverse-a-string)
+44. [Find Length of a String](#find-length-of-a-string)
+45. [Convert String to Uppercase](#convert-string-to-uppercase)
+46. [Convert String to Lowercase](#convert-string-to-lowercase)
+47. [Remove Vowels from a String](#remove-vowels-from-a-string)
+48. [Count Words in a Sentence](#count-words-in-a-sentence)
+49. [Find Sum of Digits in an Integer](#find-sum-of-digits-in-an-integer)
+50. [Reverse a Number](#reverse-a-number)
+
+---
+
+Feel free to let me know if you need anything else!
 ## Solutions
 
 ### 1. Hello World Program
