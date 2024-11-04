@@ -145,7 +145,7 @@ int main() {
     return 0;
 }
 
-
+```
 ### 6. Simple Calculator
 ```cpp
 #include <iostream>
