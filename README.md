@@ -594,6 +594,245 @@ int main() {
 
 
 
+---
+
+### 32. Check if a String is a Palindrome
+```cpp
+#include <iostream>
+#include <algorithm>
+int main() {
+    std::string str, rev;
+    std::cout << "Enter a string: ";
+    std::cin >> str;
+    rev = str;
+    std::reverse(rev.begin(), rev.end());
+    if (str == rev)
+        std::cout << "The string is a palindrome." << std::endl;
+    else
+        std::cout << "The string is not a palindrome." << std::endl;
+    return 0;
+}
+```
+
+### 33. Find Factorial Using Recursion
+```cpp
+#include <iostream>
+int factorial(int n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+int main() {
+    int n;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> n;
+    std::cout << "Factorial of " << n << " = " << factorial(n) << std::endl;
+    return 0;
+}
+```
+
+### 34. Find Fibonacci Series Using Recursion
+```cpp
+#include <iostream>
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+int main() {
+    int n;
+    std::cout << "Enter the number of terms: ";
+    std::cin >> n;
+    std::cout << "Fibonacci Series: ";
+    for (int i = 0; i < n; i++) std::cout << fibonacci(i) << " ";
+    return 0;
+}
+```
+
+### 35. Convert Celsius to Fahrenheit
+```cpp
+#include <iostream>
+int main() {
+    float celsius, fahrenheit;
+    std::cout << "Enter temperature in Celsius: ";
+    std::cin >> celsius;
+    fahrenheit = (celsius * 9/5) + 32;
+    std::cout << "Temperature in Fahrenheit: " << fahrenheit << std::endl;
+    return 0;
+}
+```
+
+### 36. Find Largest and Smallest Number in Array
+```cpp
+#include <iostream>
+#include <climits>
+int main() {
+    int n, largest = INT_MIN, smallest = INT_MAX;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> arr[i];
+        if (arr[i] > largest) largest = arr[i];
+        if (arr[i] < smallest) smallest = arr[i];
+    }
+    std::cout << "Largest = " << largest << ", Smallest = " << smallest << std::endl;
+    return 0;
+}
+```
+
+### 37. Transpose of a Matrix
+```cpp
+#include <iostream>
+int main() {
+    int rows, cols;
+    std::cout << "Enter rows and columns of matrix: ";
+    std::cin >> rows >> cols;
+    int matrix[rows][cols], transpose[cols][rows];
+    std::cout << "Enter matrix elements:\n";
+    for (int i = 0; i < rows; ++i)
+        for (int j = 0; j < cols; ++j) std::cin >> matrix[i][j];
+    for (int i = 0; i < rows; ++i)
+        for (int j = 0; j < cols; ++j) transpose[j][i] = matrix[i][j];
+    std::cout << "Transpose of matrix:\n";
+    for (int i = 0; i < cols; ++i) {
+        for (int j = 0; j < rows; ++j) std::cout << transpose[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+```
+
+### 38. Sum of Each Row and Column in a Matrix
+```cpp
+#include <iostream>
+int main() {
+    int rows, cols;
+    std::cout << "Enter rows and columns: ";
+    std::cin >> rows >> cols;
+    int matrix[rows][cols];
+    std::cout << "Enter matrix elements:\n";
+    for (int i = 0; i < rows; ++i)
+        for (int j = 0; j < cols; ++j) std::cin >> matrix[i][j];
+    std::cout << "Row sums: ";
+    for (int i = 0; i < rows; ++i) {
+        int rowSum = 0;
+        for (int j = 0; j < cols; ++j) rowSum += matrix[i][j];
+        std::cout << rowSum << " ";
+    }
+    std::cout << "\nColumn sums: ";
+    for (int j = 0; j < cols; ++j) {
+        int colSum = 0;
+        for (int i = 0; i < rows; ++i) colSum += matrix[i][j];
+        std::cout << colSum << " ";
+    }
+    return 0;
+}
+```
+
+### 39. Count Frequency of Elements in an Array
+```cpp
+#include <iostream>
+#include <map>
+int main() {
+    int n;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::map<int, int> frequency;
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> arr[i];
+        ++frequency[arr[i]];
+    }
+    std::cout << "Element frequencies:\n";
+    for (auto &elem : frequency) std::cout << elem.first << ": " << elem.second << "\n";
+    return 0;
+}
+```
+
+### 40. Sort Array in Ascending Order
+```cpp
+#include <iostream>
+#include <algorithm>
+int main() {
+    int n;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) std::cin >> arr[i];
+    std::sort(arr, arr + n);
+    std::cout << "Sorted array: ";
+    for (int i = 0; i < n; ++i) std::cout << arr[i] << " ";
+    return 0;
+}
+```
+
+### 41. Find Median of Array
+```cpp
+#include <iostream>
+#include <algorithm>
+int main() {
+    int n;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) std::cin >> arr[i];
+    std::sort(arr, arr + n);
+    double median;
+    if (n % 2 == 0)
+        median = (arr[n / 2 - 1] + arr[n / 2]) / 2.0;
+    else
+        median = arr[n / 2];
+    std::cout << "Median = " << median << std::endl;
+    return 0;
+}
+```
+
+### 42. Find Mode of Array
+```cpp
+#include <iostream>
+#include <map>
+#include <vector>
+int main() {
+    int n;
+    std::cout << "Enter number of elements: ";
+    std::cin >> n;
+    int arr[n];
+    std::map<int, int> frequency;
+    std::cout << "Enter elements: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> arr[i];
+        ++frequency[arr[i]];
+    }
+    int mode = arr[0], maxCount = 0;
+    for (auto &elem : frequency) {
+        if (elem.second > maxCount) {
+            mode = elem.first;
+            maxCount = elem.second;
+        }
+    }
+    std::cout << "Mode = " << mode << std::endl;
+    return 0;
+}
+```
+
+### 43. Reverse a String
+```cpp
+#include <iostream>
+#include <algorithm>
+int main() {
+    std::string str;
+    std::cout << "Enter a string: ";
+    std::cin >> str;
+    std::reverse(str.begin(), str.end());
+    std::cout << "Reversed string: " << str << std::endl;
+    return 0;
+}
+```
+
+
 ## Usage
 
 To run any of the solutions, compile the `.cpp` file using a C++ compiler, and execute the output file. Example for compiling **Hello World**:
